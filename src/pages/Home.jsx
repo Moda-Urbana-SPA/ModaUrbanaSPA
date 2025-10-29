@@ -14,18 +14,18 @@ export default function Home() {
         <Row className="h-100 align-items-center justify-content-center">
           <Col md={8}>
             <Image src={logo} alt="Moda Urbana SPA Logo" className="hero-logo mb-4" />
-            <h1 className="hero-title">Estilo que Define tu Calle</h1>
+            <h1 className="hero-title">Estilo que Define</h1>
             <p className="hero-subtitle mb-4">
-              Descubre colecciones exclusivas de streetwear sostenible.
+              Descubre colecciones exclusivas de moda sostenible.
             </p>
             <Button as={Link} to="/productos" className="badge-black" size="lg">
-              Ingresa Aquí
+              Catálogo
             </Button>
           </Col>
         </Row>
       </Container>
       <Container className="py-5 featured-products-section">
-        <h2 className="text-center mb-4">Productos Destacados</h2>
+        <h2 className="text-center mb-4">Los más vendidos</h2>
         <ProductGrid items={featuredProducts} />
       </Container>
     </>
