@@ -4,7 +4,6 @@ import { MemoryRouter } from 'react-router-dom';
 import AppProvider from '../context/AppContext';
 import Order from './Order';
 
-// Helper para renderizar con Router + AppProvider real
 const renderWithProviders = (ui) =>
   render(
     <MemoryRouter initialEntries={['/order']}>
@@ -14,12 +13,11 @@ const renderWithProviders = (ui) =>
 
 describe('Order Component', () => {
   beforeEach(() => {
-    // Cada test parte limpio
     window.localStorage.clear();
   });
 
   test('el componente Order se monta correctamente', () => {
-    // Carrito vacío por defecto (AppProvider inicializa desde localStorage vacío)
+    // Carrito vacío por defecto 
     renderWithProviders(<Order />);
 
     // Título principal
@@ -53,7 +51,7 @@ describe('Order Component', () => {
   });
 
   test('envío válido procesa el pedido correctamente', async () => {
-    // 🔸 Pre-carga el carrito en localStorage para que AppProvider lo levante
+    //  Pre-carga el carrito en localStorage para que AppProvider lo levante
     window.localStorage.setItem(
       'cartItems',
       JSON.stringify([
