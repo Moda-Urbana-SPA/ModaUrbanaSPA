@@ -1,6 +1,5 @@
-// src/components/products/Filters.jsx
 import { Button, ButtonGroup } from 'react-bootstrap';
-import './Product.css'; // aseguramos que use tu CSS
+import './Product.css';
 
 export default function Filters({ current, onChange, options, total }) {
   return (

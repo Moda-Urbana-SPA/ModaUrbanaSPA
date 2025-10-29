@@ -21,7 +21,6 @@ export default function ProductDetail() {
   const [color, setColor] = useState('');
   const [error, setError] = useState('');
 
-  // variantes del mock 
   const variants = product?.variants || null;
 
   const allSizes = useMemo(() => {
@@ -116,7 +115,6 @@ export default function ProductDetail() {
             {error && <Alert variant="danger" className="py-2">{error}</Alert>}
 
             <Form className="mb-3">
-              {/* Talla */}
               <Form.Group className="mb-3">
                 <Form.Label>Talla</Form.Label>
                 <Form.Select
@@ -139,7 +137,6 @@ export default function ProductDetail() {
                 </Form.Select>
               </Form.Group>
 
-              {/* Color */}
               <Form.Group className="mb-3">
                 <Form.Label>Color</Form.Label>
                 <Form.Select

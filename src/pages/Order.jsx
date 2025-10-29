@@ -43,7 +43,6 @@ export default function Order() {
 
     setSubmitting(true);
 
-    // Simulación de creación de orden (Se va a guardar localmente en el local host)
     const orderNumber = `MU-${Date.now().toString().slice(-8)}`;
     const order = {
       orderNumber,

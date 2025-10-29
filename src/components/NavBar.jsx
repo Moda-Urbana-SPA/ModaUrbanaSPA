@@ -2,7 +2,7 @@ import { Navbar, Nav, Container, Badge, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/AppContext';
 import './NavBar.css';
-import logo from '../assets/logo512.png'; // o reemplázalo por tu archivo nuevo
+import logo from '../assets/logo512.png';
 
 export default function NavBar() {
   const { cartCount } = useCart();

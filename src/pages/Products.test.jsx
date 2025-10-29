@@ -17,7 +17,6 @@ describe('Componente Products', () => {
 
   test('renderiza todas las tarjetas de producto', () => {
     renderWithRouter(<Products />);
-    // Basta con que exista al menos un botón "Ver detalles"
     expect(screen.getAllByRole('button', { name: /ver detalles/i }).length).toBeGreaterThan(0);
   });
 
