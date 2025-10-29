@@ -34,3 +34,43 @@
   box-shadow: none !important;
   outline: none !important;
 }
+
+.hero-section-home {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.hero-content-wrapper {
+  max-width: 800px;
+}
+
+.hero-logo {
+  max-width: 140px; 
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #fff !important;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #e0e0e0 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.featured-products-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featured-products-section h2 {
+  color: #000 !important;
+}
