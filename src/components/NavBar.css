@@ -1,0 +1,21 @@
+.navbar.navbar-black .navbar-brand,
+.navbar.navbar-black .nav-link,
+.navbar.navbar-black .nav-link:focus,
+.navbar.navbar-black .nav-link:hover {
+  color: #fff !important;
+}
+
+.navbar.navbar-black .nav-link:hover,
+.navbar.navbar-black .navbar-brand:hover {
+  color: #ccc !important;
+}
+
+.navbar-black {
+  background-color: #000 !important;
+}
+
+.navbar-black .badge {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-weight: 600;
+}
